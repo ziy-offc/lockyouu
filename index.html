@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Copy Virtex</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 15px;
+    }
+    h1 { text-shadow: 0 0 5px gray,0 0 10px #0ff,0 0 20px #0ff,0 0 40px #0ff, 0 0 2px #000,0 0 4px #000;margin:0 0 10px 0;
+  text-align:center;}
+  h2 { text-shadow: 0 0 5px red,0 0 10px #0ff,0 0 20px #0ff,0 0 40px #0ff, 0 0 2px #000,0 0 4px #000;margin:0 0 10px 0;
+  text-align:center;}
+    .container {
+      border: 3px solid blue;
+      border-radius: 30px;
+     
+      margin-top: 130px;
+      width: 300px;
+              height: 200px;
+      box-shadow: 0 0 15px blue;
+        background-color: blue; 
+        animation: blink 0.1s infinite;
+     position: center;
+         margin-right: 1px;
+         margin: 1px,120px,100px;
+         
+        
+      
+    }
+    @keyframes blink {
+        0% { background-color: red; } 
+        50% { background-color: black; } 
+        100% { background-color: red; }
+        50% { background-color: geren; } 
+    }
+    
+    footer {
+      margin-top: 210px;
+      color: aqua;
+    }
+    p {
+    text-align: left;
+    }
+    #playBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: red; 
+        animation: blink 0.1s infinite;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00 inset;
+  border: 2px solid #00ff00;
+  animation: linkGlow 2s infinite alternate;
+  z-index: 1000;
+}
+
+  </style>
+</head>
+<body>
+  <h1>©ZIY OFFC</h1>
+ 
+  <div class="container">
+    <h2>⚠️ Hack by Fahrezi ⚠️</h2>
+    <p>Bersenang-senang di atas yang tidak senang tumbuh di bawah tanah terbang di atas awan itulah sosok pemuda indonesia tidak berniat bersaing sekedar hobi & bakat perbaiki website ini karena terlalu busuk. 
+ <h2>𓆩F𓆪𓆩A𓆪𓆩H𓆪𓆩R𓆪𓆩E𓆪𓆩Z𓆪𓆩I𓆪</h2> </p>
+  </div>
+ <audio id="myAudio" src="https://files.catbox.moe/64w5r5.mp3"></audio>
+  <button id="playBtn">▶️</button>
+  <footer>FAHREZI | KILL YOU</footer>
+
+  <!-- Virtex disembunyikan -->
+  <textarea id="virtex" style="position:absolute; left:-9999px;">
+𓆩ᴀ𓆪𓆩ᴠ𓆪𓆩ɪ𓆪𓆩ʀ𓆪𓆩ᴛ𓆪𓆩ᴇ𓆪𓆩x𓆪𓆩𓆪𓆩𓆪
+haiiikocak
+  </textarea>
+  </body>
+<script>
+const audio = document.getElementById('myAudio');
+const btn = document.getElementById('playBtn');
+
+btn.addEventListener('click', () => {
+  if(audio.paused) audio.play();
+  else audio.pause();
+});
+
+audio.onplay = () => btn.textContent = '🔊';
+audio.onpause = () => btn.textContent = '▶️'
+ </script>
+
+</html>
